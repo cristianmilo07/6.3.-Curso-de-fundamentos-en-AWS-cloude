@@ -154,3 +154,26 @@ Lecturas recomendadas
 MobaXterm free Xserver and tabbed SSH client for Windows
 
 https://mobaxterm.mobatek.net/
+
+# 8. Conectándonos a nuestra instancia desde Linux
+
+# 9. Conectándonos a nuestra instancia desde OSX
+
+# 10. Subiendo un proyecto: Clonando un repositorio de GitHub a nuestra Instancia de EC2
+
+Para clonar repositorios desde tu instancia de AWS necesitas instalar git:
+
+# Permisos de super usuario
+sudo su
+# Instalación de git
+yum install git
+Teniendo git instalado ya podemos clonar el repositorio que necesitemos:
+
+git clone [URL_DEL_PROYECTO]
+En el siguiente link vas a encontrar el repositorio con el que vamos a trabajar en la clase: https://github.com/mauropm/aws-platzi-python.
+___________________
+les comparto un vídeo de como programar la instancia para que se apague y se prenda en determinado periodo de tiempo, ya que somos muchos que usamos el servicio free me parece vital optimizar los tiempos de conexión
+
+https://www.youtube.com/watch?v=xWnlCxvojQw
+
+11. Subiendo un proyecto Clonando un repositorio de GitHub a nuestra Instancia de EC2
