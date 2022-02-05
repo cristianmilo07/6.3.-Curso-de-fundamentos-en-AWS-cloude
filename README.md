@@ -176,4 +176,49 @@ les comparto un vídeo de como programar la instancia para que se apague y se pr
 
 https://www.youtube.com/watch?v=xWnlCxvojQw
 
-11. Subiendo un proyecto Clonando un repositorio de GitHub a nuestra Instancia de EC2
+# 11. Subiendo un proyecto Clonando un repositorio de GitHub a nuestra Instancia de EC2
+
+Ahora que clonamos nuestro repositorio, vamos a instalar las dependencias necesarias para que funcione. El proyecto que trabajamos en clase sólo necesita una dependencia:
+
+- Permisos de super usuario
+sudo su
+- Instalación de flask
+pip install flask
+Con las dependencias instaladas podemos correr nuestro servidor, en el caso de nuestro proyecto es con el siguiente comando:
+
+python app.py
+Para acceder por internet a nuestro servidor tenemos que buscar nuestra instancia de EC2 y copiar la IP pública, pero no es suficiente. Debemos entrar a Security Groups, Inbound y añadir una regla Custom TCP Rule, escribe el puerto en el que corre tu servidor (que para nuestro proyecto es el 5000) y en la opción Source elije Anywhere.
+
+Recuerda que para encontrar tu IP pública puedes entrar a whatismyip.com.
+
+Lecturas recomendadas
+
+What Is My IP? Shows your real IP - IPv4 - IPv6 - WhatIsMyIP.com®
+
+https://www.whatismyip.com/
+
+
+# 12. ¿Qué es Lambda y Serverless?
+
+Lambda es un proyecto de AWS muy relacionado con el concepto de Serverless, dejar la administración de tus servidores en manos de Amazon para solo encargarte de las funciones de código que ejecutara tu aplicación.
+
+¿Qué son?
+Imagina lambda como un lugar donde puedes ejecutar funciones de tu código.
+
+Serverless
+No existe un servidor como vimos en EC2, es decir, solo está el código en lamba y AWS se encarga de ejecutarlo cuando necesites.
+
+Lenguajes soportados
+Puedes programar funciones lamba en Nodejs (JavaScript), Python, Java (8), C# (.Net Core) y Go.
+
+Recuerda tener en cuenta los siguientes puntos:
+
+	-Memoria: Mínima de 128MB, máxima 3000MB con incrementos de 64MB.
+	-Límites de ejecución y espacio: Puedes correr tu aplicación hasta 300 segundos y tienes un /tmp limitado a 512MB.
+	-Ejecución paralela: Esta limitada a 1000 ejecuciones concurrentes (a un mismo tiempo), no tiene límite en ejecuciones secuenciales (una detrás de otra).
+	-Ventajas de Lambda:
+
+	-Seguridad: Al ser una infraestructura compartida, no tienes que preocuparte de seguridad: AWS maneja todo.
+	-Performance: AWS está monitoreando constantemente la ejecución de tus funciones y se encarga de que siempre tenga el mejor performance.
+	-Código aislado: Tu código, aún estando en una infraestructura compartida, corre en un ambiente virtual exclusivo, aislado de las demás ejecuciones lamba.
+	-Recuerda que AWS te regala 1 millón de peticiones lamba gratis el primer año.
