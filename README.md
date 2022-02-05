@@ -73,6 +73,7 @@ https://passwordsgenerator.net/
 https://aws.amazon.com/es/
 https://aws.amazon.com/es/grants/
 
+
 # 3. Introducción a la oferta de servicios de AWS y sus aplicaciones
 
 Los servicios en AWS se dividen en:
@@ -101,7 +102,9 @@ Desktop & App Streaming.
 Internet Of Things.
 Game Development.
 
+____________
 **Introducción a la oferta de AWS y sus interacciones**
+____________
 
 # 4. Ejemplo de arquitectura con Elastic Beanstalk
  Conceptos importantes vistos en la clase:
@@ -222,3 +225,38 @@ Recuerda tener en cuenta los siguientes puntos:
 	-Performance: AWS está monitoreando constantemente la ejecución de tus funciones y se encarga de que siempre tenga el mejor performance.
 	-Código aislado: Tu código, aún estando en una infraestructura compartida, corre en un ambiente virtual exclusivo, aislado de las demás ejecuciones lamba.
 	-Recuerda que AWS te regala 1 millón de peticiones lamba gratis el primer año.
+	
+#13 Creando una función Lambda
+
+____________
+**Elastic beanstalk**
+____________
+
+#14. Conociendo Elastic Beanstalk
+
+Elastic Beanstalk es una plataforma donde en pocos pasos, obtienes un balanceador de cargas y tantas instancias EC2 como tu quieras.
+
+Este ambiente puede escalar de manera dinámica de acuerdo al tiempo de respuesta a los usuarios, uso de CPU, uso de RAM, etc.
+
+Esta herramienta soporta los siguientes ambientes:
+
+	-Docker Image
+	-Go
+	-Java SE
+	-Java con Tomcat
+	-.NET + Windows Server + IIS
+	-Nodejs
+	-PHP
+	-Python
+	-Ruby
+
+#15. Creando un ambiente en Elastic Beanstalk
+
+GitHub - mauropm/aws-platzi-python at elastic-beanstalk
+
+https://github.com/mauropm/aws-platzi-python/tree/elastic-beanstalk
+
+
+Platzi
+
+http://platzi.com/comentario/498364/
