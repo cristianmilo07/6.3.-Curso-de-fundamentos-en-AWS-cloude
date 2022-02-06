@@ -226,13 +226,13 @@ Recuerda tener en cuenta los siguientes puntos:
 	-Código aislado: Tu código, aún estando en una infraestructura compartida, corre en un ambiente virtual exclusivo, aislado de las demás ejecuciones lamba.
 	-Recuerda que AWS te regala 1 millón de peticiones lamba gratis el primer año.
 	
-#13 Creando una función Lambda
+# 13 Creando una función Lambda
 
 ____________
 **Elastic beanstalk**
 ____________
 
-#14. Conociendo Elastic Beanstalk
+# 14. Conociendo Elastic Beanstalk
 
 Elastic Beanstalk es una plataforma donde en pocos pasos, obtienes un balanceador de cargas y tantas instancias EC2 como tu quieras.
 
@@ -250,7 +250,7 @@ Esta herramienta soporta los siguientes ambientes:
 	-Python
 	-Ruby
 
-#15. Creando un ambiente en Elastic Beanstalk
+# 15. Creando un ambiente en Elastic Beanstalk
 
 GitHub - mauropm/aws-platzi-python at elastic-beanstalk
 
@@ -260,3 +260,40 @@ https://github.com/mauropm/aws-platzi-python/tree/elastic-beanstalk
 Platzi
 
 http://platzi.com/comentario/498364/
+
+# 16. Almacenamiento - S3
+
+Existen dos grandes opciones para almacenamiento en AWS:
+
+	-S3: Es un repositorio de archivos rápido y perfecto para uso de una aplicación a la hora de crear, manipular y almacenar datos.
+	-Glacier: Es un servicio de almacenamiento en la nube para archivar datos y realizar copias de seguridad a largo plazo.
+Con S3, AWS te permite guardar archivos en su plataforma, de tal forma, tus instancias EC2, Lamba u otras son efímeras y puedes borrarlas sin preocupación alguna. Tambien te permite hacer respaldos en tiempo prácticamente real en otras regiones de AWS.
+
+https://cyberduck.io/
+
+# 17. Almacenamiento con S3: Contenido Estatico
+
+Lecturas recomendadas
+
+aws-platzi-python/templates at master · mauropm/aws-platzi-python · GitHub
+
+https://github.com/mauropm/aws-platzi-python/tree/master/templates
+
+# 18. Almacenamiento con Glacier: Contenido duradero
+
+AWS tiene un tipo de almacenamiento más económico, pero también más lento que S3 llamado Glacier. Es una muy buena opción si tienes que guardar algún tipo de archivo histórico, como documentos de transacciones de años pasados.
+
+Glacier podrá entregarte tus datos y/o archivos con tiempos de entre 2 y 15 minutos por archivo.
+
+# Base de datos
+
+# 19. AWS creó un producto llamado RDS que optimiza el funcionamiento de un motor de bases de datos. Este servicio incluye mantenimiento a tu base de datos, respaldos diarios, optimización para tu tipo de uso, etc.
+
+RDS tiene varias opciones de motores de bases de datos, como: Aurora PG, Aurora MySQL, MySQL, MariaDB, PostgreSQL, Oracle y Microsoft SQL Server.
+
+Recuerda que AWS te da 750 horas de servicio gratis de RDS, incluyendo cualquiera de los motores de bases de datos.
+AWS creó un producto llamado RDS que optimiza el funcionamiento de un motor de bases de datos. Este servicio incluye mantenimiento a tu base de datos, respaldos diarios, optimización para tu tipo de uso, etc.
+
+RDS tiene varias opciones de motores de bases de datos, como: Aurora PG, Aurora MySQL, MySQL, MariaDB, PostgreSQL, Oracle y Microsoft SQL Server.
+
+Recuerda que AWS te da 750 horas de servicio gratis de RDS, incluyendo cualquiera de los motores de bases de datos.
