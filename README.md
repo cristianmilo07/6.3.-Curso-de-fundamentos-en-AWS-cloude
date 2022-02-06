@@ -286,8 +286,9 @@ AWS tiene un tipo de almacenamiento más económico, pero también más lento qu
 Glacier podrá entregarte tus datos y/o archivos con tiempos de entre 2 y 15 minutos por archivo.
 
 # Base de datos
-
-# 19. AWS creó un producto llamado RDS que optimiza el funcionamiento de un motor de bases de datos. Este servicio incluye mantenimiento a tu base de datos, respaldos diarios, optimización para tu tipo de uso, etc.
+ 
+# 19. Base de datos - RDS Aurora PG
+AWS creó un producto llamado RDS que optimiza el funcionamiento de un motor de bases de datos. Este servicio incluye mantenimiento a tu base de datos, respaldos diarios, optimización para tu tipo de uso, etc.
 
 RDS tiene varias opciones de motores de bases de datos, como: Aurora PG, Aurora MySQL, MySQL, MariaDB, PostgreSQL, Oracle y Microsoft SQL Server.
 
@@ -297,3 +298,87 @@ AWS creó un producto llamado RDS que optimiza el funcionamiento de un motor de 
 RDS tiene varias opciones de motores de bases de datos, como: Aurora PG, Aurora MySQL, MySQL, MariaDB, PostgreSQL, Oracle y Microsoft SQL Server.
 
 Recuerda que AWS te da 750 horas de servicio gratis de RDS, incluyendo cualquiera de los motores de bases de datos.
+
+# 20. Conociendo RDS PG
+
+AWS implementa el motor de PostgreSQL (RDS PG) en una instancia optimizada para correr con la máxima eficacia.
+
+RDS PG incluye, por omisión, tareas de optimización como vacuum, recuperación de espacio en el disco duro y planificación de queries. Tambien te permite hacer respaldos diarios (o incluso más seguido) de tu base de datos.
+
+Otras ventajas de RDS PG son:
+
+	-Cifrado a tu elección, tu base de datos puede estar cifrada en disco duro
+	-Migración asistida: RDS PG tiene mecanismos que te ayudan a migrar tu información en caso de que tu ya cuentes con una base de datos con otro proveedor.
+	-Alta disponibilidad: RDS PG te permite fácilmente configurar un ambiente de alta disponibilidad al ofrecerte diversas zonas para tu base de datos.
+Recuerda que Amazon RDS provee de seguridad por omisión tan alta que no podrás conectarte a tu DB hasta que explícitamente lo permitas.
+
+# 21. Creando una base de datos Platzi DB
+# 22. Haciendo una migración a RDS PG
+
+# 23. Conociendo Aurora PG (Postgress)
+
+Aurora PG es una nueva propuesta en bases de datos, AWS toma el motor de Postgres, instancias de nueva generación, optimizaciones varias en el kernel/código y obtiene un Postgres 3x más rápido.
+
+Aurora PG es compatible con Postgres 9.6.x.
+
+Antes de migrar a Aurora PG debes considerar los siguientes puntos:
+
+	-Usar Aurora RDS PG no es gratis en ningún momento.
+	-AWS RDS PG es eficiente por varias razones:
+		-Modificaciones al código mismo del motos de bases de datos.
+		-Instancias de última generación.
+	-Aurora PG estará por omisión en una configuración de alta disponibilidad con distintas zonas, es decir, en 3 centros de datos a un mismo tiempo.
+	
+# 24. Haciendo una migración a Aurora DB
+# 25. Mejores prácticas de Bases de Datos y RDS
+
+# Redes
+# 26. Mejores prácticas de Bases de Datos y RDS
+
+Existen muchos servicios de redes en AWS, uno de los más interesantes es Route 53.
+
+AWS te permite tener un DNS muy avanzado a tu disposición, con el podrás hacer subdominios asignados a instancias y verlos reflejados en segundos.
+
+Route 53 está disponible en todas las regiones de AWS, por lo que funcionará excelente aún en caso de que alguna de las regiones se pierda.
+# Herramientas de administración
+
+# 27. Herramientas de administración - IAM
+
+Existen muchas herramientas de administración en AWS muy útiles, las siguientes tres son las más importantes:
+
+	-IAM te permite administrar todos los permisos de acceso de usuarios y máquinas sobre máquinas.
+
+	-CloudWatch te mostrará diversos eventos relacionados con tu infraestructura o servidores, para tener un lugar centralizado de logs e información.
+
+	-Cloudtrail es una herramienta de auditoria que permite ver quién o qué hizo que actividad en tu cuenta de AWS.
+	
+# 28. Utilizando IAM
+
+# 29. CloudWatch
+
+# 30. CloudTrail
+CloudTrail: Herramienta que te permite saber qué o quién hizo alguna actividad dentro de tu cuenta de AWS.
+
+Cada uno de los productos de AWS tienen diversas alternativas para acceder a más logs, estas opciones cuentan con almacenamiento histórico y hacen un gran trabajo al tratar la información para auditar actividades y deshabilitar usuario.
+
+# 31. Certificate manager
+
+Existen varias herramientas de seguridad en AWS. Vamos a ver las más importantes:
+
+Certificate Manager: AWS te permite crear nuevos certificados cuando necesites (o importar alguno que ya tengas) y te sera fácil usarlos en balanceadores de cargas.
+
+GuardDuty: AWS permite que hagas una auditoria constante de todos los intentos de conexiones que tienen tus equipos de computo.
+
+----
+
+Existen varias herramientas de seguridad en AWS. Vamos a ver las más importantes:
+
+Certificate Manager: AWS te permite crear nuevos certificados cuando necesites (o importar alguno que ya tengas) y te sera fácil usarlos en balanceadores de cargas.
+
+GuardDuty: AWS permite que hagas una auditoria constante de todos los intentos de conexiones que tienen tus equipos de computo.
+
+# 32. GuardDuty
+
+# 33. AWS Rekognition
+
+# 34. Creando nuestro servicio de Postgres
